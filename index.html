@@ -6,14 +6,25 @@
     <meta name="description" content="Pet Rações São Camilo - Tudo para o seu melhor amigo. Rações, acessórios, brinquedos e muito mais para cães, gatos e outros pets.">
     <title>Pet Rações São Camilo - O melhor para seu Pet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
+
 <body>
 
     <header class="main-header">
         <div class="container header-container">
-            <nav class="main-nav">
-                <ul>
+            <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Logo Pet Rações São Camilo" class="logo">
+            </a>
+            
+            <nav class="main-nav" aria-label="Menu principal">
+                <ul class="nav-list">
                     <li><a href="#home">Início</a></li>
                     <li><a href="#categorias">Cães</a></li>
                     <li><a href="#categorias">Gatos</a></li>
@@ -21,8 +32,9 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+            
             <div class="header-actions">
-                <span>🛒</span>
+                <span class="cart-icon">🛒</span>
             </div>
         </div>
     </header>
@@ -31,7 +43,7 @@
         <section id="home" class="hero-section">
             <div class="container">
                 <div class="hero-content">
-                    <img src="logo.png" alt="Logo Pet Rações São Camilo" class="hero-logo">
+                    <img src="assets/images/logo.png" alt="Logo Pet Rações São Camilo" class="hero-logo">
                     <div class="hero-text">
                         <h1>Pet Rações São Camilo</h1>
                         <p>Tudo que seu melhor amigo precisa, com o carinho que ele merece!</p>
@@ -46,17 +58,17 @@
                 <h2>Principais Categorias</h2>
                 <div class="category-grid">
                     <div class="category-card">
-                        <img src="images/blackcaes.jpg" alt="Cachorros" class="category-img">
+                        <img src="assets/images/produtos/blackcaes.jpg" alt="Cachorros" class="category-img">
                         <h3>Para Cães</h3>
                         <a href="#" class="btn btn-secondary">Ver Produtos</a>
                     </div>
                     <div class="category-card">
-                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gatos" class="category-img">
+                        <img src="assets/images/produtos/gatos.png" alt="Gatos" class="category-img">
                         <h3>Para Gatos</h3>
                         <a href="#" class="btn btn-secondary">Ver Produtos</a>
                     </div>
                     <div class="category-card">
-                        <img src="https://images.unsplash.com/photo-1550256076-d0200980e4ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Promoções" class="category-img">
+                        <img src="assets/images/produtos/promocoes.jpg" alt="Promoções" class="category-img">
                         <h3>Promoções</h3>
                         <a href="#" class="btn btn-secondary">Aproveite!</a>
                     </div>
@@ -69,25 +81,25 @@
                 <h2>Produtos em Destaque</h2>
                 <div class="product-grid">
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ração Exemplo" class="product-img">
+                        <img src="assets/images/produtos/racao-caes.jpg" alt="Ração para Cães" class="product-img">
                         <h3>Ração Premium para Cães</h3>
                         <p class="product-price">R$ 99,90</p>
                         <a href="#" class="btn btn-secondary">Comprar</a>
                     </div>
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gatos" class="category-img">
+                        <img src="assets/images/produtos/brinquedo-gatos.jpg" alt="Brinquedo para Gatos" class="product-img">
                         <h3>Brinquedo para Gatos</h3>
                         <p class="product-price">R$ 25,50</p>
                         <a href="#" class="btn btn-secondary">Comprar</a>
                     </div>
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Acessório Exemplo" class="product-img">
+                        <img src="assets/images/produtos/coleira.jpg" alt="Coleira para Cães" class="product-img">
                         <h3>Coleira Premium</h3>
                         <p class="product-price">R$ 49,00</p>
                         <a href="#" class="btn btn-secondary">Comprar</a>
                     </div>
                     <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Outra Ração" class="product-img">
+                        <img src="assets/images/produtos/racao-premium.jpg" alt="Ração Super Premium" class="product-img">
                         <h3>Ração Super Premium</h3>
                         <p class="product-price">R$ 150,00</p>
                         <a href="#" class="btn btn-secondary">Comprar</a>
@@ -105,17 +117,23 @@
                  <p>Tem alguma dúvida? Fale conosco!</p>
                  <p><strong>Telefone/WhatsApp:</strong> (15) 99632-7845</p>
                  <p><strong>Email:</strong> contato@petracoessaocamilo.com.br</p>
-                 <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Camilo - Itapeva/SP</p>
+                 <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Camila - Itapeva/SP</p>
              </div>
         </section>
     </main>
 
     <footer class="main-footer">
         <div class="container">
-            <img src="logo.png" alt="Logo Pet Rações São Camilo" class="footer-logo">
+            <img src="assets/images/logo.png" alt="Logo Pet Rações São Camilo" class="footer-logo">
             <p>© 2023 Pet Rações São Camilo. Todos os direitos reservados.</p>
-            <p>Desenvolvido com ❤️</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="WhatsApp">💬</a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
